@@ -65,14 +65,14 @@ Le but du TP est de réaliser une page de gestion d'utilisateurs qui ressemble a
 Avec les éléments mis à votre disposition, vous devez créer avec Vaadin une page telle que présentée ci-dessus avec :
 - Un tableau qui liste les informations de l'ensemble des utilisateurs
 - Un filtrage par Nom et/ou Prénom au dessus tu tableau
-- Un bouton `Add new customer` en bas à droite du tableau , qui fait apparaitre un popin de création d'utilisateur au centre de l'écran.
-- Un bouton `Edit customer` a droite du premier bouton, qui permet d'éditer un utilisateur lorsqu'il est selectionné, et s'il est modifiable. (dans le même popin que celui de création)
-- Un bouton `Delete customer` a droite du deuxième bouton, qui permet de supprimer un utilisateur lorsqu'il est selectionné, et s'il est modifiable. (avec un popin de confirmation)
-- Un bouton `Enable Modification` a droite du troisième bouton, qui permet de rendre un utilisateur modifiable si celui ci n'est pas modifiable. Il n'est visible que lors de la selection d'un utilisateur non modifiable.
-- Un bouton `Disable Modification` a droite du troisième bouton, qui permet de rendre un utilisateur non modifiable si celui ci est modifiable. Il n'est visible que lors de la selection d'un utilisateur modifiable.
+- Un bouton `Add new customer` en bas à gauche du tableau , qui fait apparaitre un popin de création d'utilisateur au centre de l'écran.
+- Un bouton `Edit customer` a droite du premier bouton, qui permet d'éditer un utilisateur lorsqu'il est sélectionné, et s'il est modifiable. (dans le même popin que celui de création)
+- Un bouton `Delete customer` a droite du deuxième bouton, qui permet de supprimer un utilisateur lorsqu'il est sélectionné, et s'il est modifiable. (avec un popin de confirmation)
+- Un bouton `Enable Modification` a droite du troisième bouton, qui permet de rendre un utilisateur modifiable si celui ci n'est pas modifiable. Il n'est visible que lors de la sélection d'un utilisateur non modifiable.
+- Un bouton `Disable Modification` a droite du troisième bouton, qui permet de rendre un utilisateur non modifiable si celui ci est modifiable. Il n'est visible que lors de la sélection d'un utilisateur modifiable.
 
 Vous avez à dispostion :
-- Une classe `Customer.java` qui modélise un utilisateur. (Il vous sera demandé d'ajouté un attribut 'modifiable' par la suite)
+- Une classe `Customer.java` qui modélise un utilisateur. (Il vous sera demandé d'ajouter un attribut 'modifiable' par la suite)
 - Une classe `MyUI.java` qui est la classe où vous pourrez gérer votre interface utilisateur en utilisant des composants Vaadin. Celle-ci contient actuellement le HelloWorld, vous devrez la modifier pour créer l'interface décrite précédemment.
 - Une classe `CustomerService.java` qui est toute la partie 'calcul' de vos fonctionnalités. Les méthodes sont pré-créées, il vous faut maintenant ajouter le code adéquat pour faire fonctionner la méthode.
 - Une classe `SaveWindow.java` qui concerne le popin de création, et de modification d'un utilisateur.
@@ -102,7 +102,7 @@ Implémenter les différentes fonctionnalités (dans l'ordre) :
 - Ajoutez un bouton 'Delete customer' qui ouvre un popin au centre de l'écran.
 - Le popin doit contenir : une phrase de confirmation, un bouton 'Supprimer' qui supprime l'utilisateur sélectionné et un bouton 'Annuler' qui ferme le popin. Le popin ne doit pas être fermable grace à la croix, et ne peux pas être redimensionnable.
 - Ajoutez un filtre des utilisateurs par nom et/ou prénom au dessus du tableau
-- Lors d'un changement dans le filtre, un évènement change automatiquement les utilisateurs visibles dans le tableau (vous pouvez vous aider des fonctions 'findAll' dans le CustomerService en les complétant).
+- Lors d'un changement dans le filtre, un événement change automatiquement les utilisateurs visibles dans le tableau (vous pouvez vous aider des fonctions 'findAll' dans le CustomerService en les complétant).
 - Ajoutez un bouton au filtre permettant de vider le filtre.
 - Mettez le filtre et le bouton dans un CssLayout et mettez y un style 'LAYOUT_COMPONENT_GROUP'
 - Ajoutez un attribut boolean 'modifiable' au Customer, et créer lui le getter 'isModifiable' et le setter 'setModifiable' (attention de bien respecter la nomenclature sinon ça risque de planter).
@@ -110,7 +110,7 @@ Implémenter les différentes fonctionnalités (dans l'ordre) :
 - Créez un bouton 'Disable modification' qui permet de rendre l'utilisateur non modifiable.
 - Changer le comportement de 'Edit customer' et 'Delete customer' pour les rendre disable lors de la selection d'un utilisateur non modifiable.
 - Créez un bouton 'Enable modification' qui permet de rendre l'utilisateur modifiable.
-- Changez le comportement de 'Enable modification' et 'Disable modification' pour qu'ils s'affichent uniquement si cela est utile. (Enable quand un utilisateur non modifiable est selectionné, inversement pour Disable, et aucun des deux lorsqu'aucun utilisateur n'est selectionné)
+- Changez le comportement de 'Enable modification' et 'Disable modification' pour qu'ils s'affichent uniquement si cela est utile. (Enable quand un utilisateur non modifiable est sélectionné, inversement pour Disable, et aucun des deux lorsqu'aucun utilisateur n'est sélectionné)
 
 Pour aller plus loin :
 ----------------------

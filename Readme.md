@@ -114,6 +114,6 @@ Pour aller plus loin :
 ----------------------
 
 - Ajoutez une fonctionnalité qui permet de copier un utilisateur en double dans le tableau.
-- Séparez le tableau en deux parties, un avec les utlisateurs modifiables, l'autres avec les utilisateurs non modifiables, et effectuez les changements appropriés.
+- Séparez le tableau en deux tableaux, un avec les utlisateurs modifiables, l'autre avec les utilisateurs non modifiables, et effectuez les changements appropriés.
 
 TP réalisé par : Maxime Opsommer, Alexandre Delassus et Pierre-Claver Diarra

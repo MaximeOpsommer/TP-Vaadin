@@ -89,6 +89,7 @@ Pensez à consulter notre [mini-wiki](https://github.com/MaximeOpsommer/TP-Vaadi
 ## Réalisation des fonctionnalités
 
 Vous avez désormais tout ce qu'il faut pour démarrer.
+Ce guide est très orienté mais tout n'est pas forcement écrit (utilisation des layout par exemple).
 Implémenter les différentes fonctionnalités (dans l'ordre) :
 
 - Listez les différents utilisateurs sous forme de tableau
@@ -103,6 +104,7 @@ Implémenter les différentes fonctionnalités (dans l'ordre) :
 - Ajoutez un filtre des utilisateurs par nom et/ou prénom au dessus du tableau
 - Lors d'un changement dans le filtre, un évènement change automatiquement les utilisateurs visibles dans le tableau (vous pouvez vous aider des fonctions 'findAll' dans le CustomerService en les complétant).
 - Ajoutez un bouton au filtre permettant de vider le filtre.
+- Mettez le filtre et le bouton dans un CssLayout et mettez y un style 'LAYOUT_COMPONENT_GROUP'
 - Ajoutez un attribut boolean 'modifiable' au Customer, et créer lui le getter 'isModifiable' et le setter 'setModifiable' (attention de bien respecter la nomenclature sinon ça risque de planter).
 - Affichez le dans le tableau
 - Créez un bouton 'Disable modification' qui permet de rendre l'utilisateur non modifiable.

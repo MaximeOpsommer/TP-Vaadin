@@ -93,13 +93,13 @@ Implémenter les différentes fonctionnalités (dans l'ordre) :
 
 - Listez les différents utilisateurs sous forme de tableau
 - Ajoutez un bouton 'Add new customer' (en dessous du taleau) qui ouvre un popin au centre de l'écran.
-- Le popin doit contenir : Nom, Prénom, Email, Date de naissance ,un bouton Save pour créer un nouvel utilisateur et un bouton Cancel pour tout annuler et fermer le popin. L'utilisateur doit être créé et ajouté dans le tableau sans avoir besoin de rafraichir la page.
+- Le popin doit contenir : Nom, Prénom, Email, Date de naissance ,un bouton Save pour créer un nouvel utilisateur et un bouton Cancel pour tout annuler et fermer le popin. L'utilisateur doit être créé et ajouté dans le tableau sans avoir besoin de rafraichir la page. Le popin ne doit pas être fermable grace à la croix, et ne peux pas être redimensionnable.
 - Créez la fonctionnalité permettant de selectionner un utilisateur dans le tableau grace au clic de souris.
 - Ajoutez un bouton 'Edit customer' (à droite du tableau) qui ouvre le popin précèdent avec les informations de l'utilisateur selectionné, permettant à celui ci d'être édité.
 - Ajoutez au bouton 'Save' le raccourci 'ENTER' et mettez lui le style 'BUTTON_PRIMARY'.
 - Rendre le bouton 'Edit customer' disable lorsqu'aucun utilisateur n'est selectionné (et enable lorsqu'un utilisateur est selectionné)
 - Ajoutez un bouton 'Delete customer' qui ouvre un popin au centre de l'écran.
-- Le popin doit contenir : une phrase de confirmation, un bouton 'Supprimer' qui supprime l'utilisateur sélectionné et un bouton 'Annuler' qui ferme le popin.
+- Le popin doit contenir : une phrase de confirmation, un bouton 'Supprimer' qui supprime l'utilisateur sélectionné et un bouton 'Annuler' qui ferme le popin. Le popin ne doit pas être fermable grace à la croix, et ne peux pas être redimensionnable.
 - Ajoutez un filtre des utilisateurs par nom et/ou prénom au dessus du tableau
 - Lors d'un changement dans le filtre, un évènement change automatiquement les utilisateurs visibles dans le tableau (vous pouvez vous aider des fonctions 'findAll' dans le CustomerService en les complétant).
 - Ajoutez un attribut boolean 'modifiable' au Customer, et créer lui le getter 'isModifiable' et le setter 'setModifiable' (attention de bien respecter la nomenclature sinon ça risque de planter).

@@ -102,6 +102,7 @@ Implémenter les différentes fonctionnalités (dans l'ordre) :
 - Le popin doit contenir : une phrase de confirmation, un bouton 'Supprimer' qui supprime l'utilisateur sélectionné et un bouton 'Annuler' qui ferme le popin. Le popin ne doit pas être fermable grace à la croix, et ne peux pas être redimensionnable.
 - Ajoutez un filtre des utilisateurs par nom et/ou prénom au dessus du tableau
 - Lors d'un changement dans le filtre, un évènement change automatiquement les utilisateurs visibles dans le tableau (vous pouvez vous aider des fonctions 'findAll' dans le CustomerService en les complétant).
+- Ajoutez un bouton au filtre permettant de vider le filtre.
 - Ajoutez un attribut boolean 'modifiable' au Customer, et créer lui le getter 'isModifiable' et le setter 'setModifiable' (attention de bien respecter la nomenclature sinon ça risque de planter).
 - Affichez le dans le tableau
 - Créez un bouton 'Disable modification' qui permet de rendre l'utilisateur non modifiable.

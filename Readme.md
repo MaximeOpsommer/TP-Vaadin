@@ -112,11 +112,7 @@ Implémenter les différentes fonctionnalités (dans l'ordre) :
 Pour aller plus loin :
 ----------------------
 
-- Ajouter une fonction qui permet de copier un utilisateur en double dans le tableau.
-- Séparer le tableau en deux partie, un avec les utlisateurs modifiables, l'autres avec les utilisateurs non modifiables, et effectué les changements appropriés.
-
-
-
-
+- Ajoutez une fonction qui permet de copier un utilisateur en double dans le tableau.
+- Séparez le tableau en deux partie, un avec les utlisateurs modifiables, l'autres avec les utilisateurs non modifiables, et effectuez les changements appropriés.
 
 TP réalisé par : Maxime Opsommer, Alexandre Delassus et Pierre-Claver Diarra

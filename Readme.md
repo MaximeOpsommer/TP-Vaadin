@@ -65,15 +65,20 @@ Le but du TP est de réaliser une page de gestion d'utilisateurs qui ressemble a
 Avec les éléments mis à votre disposition, vous devez créer avec Vaadin une page telle que présentée ci-dessus avec :
 - Un tableau qui liste les informations de l'ensemble des utilisateurs
 - Un filtrage par Nom et/ou Prénom au dessus tu tableau
-- Un bouton `Add new customer` à droite du filtre, qui fait apparaitre un formulaire de création d'utilisateur à droite du tableau. (Vous devrez gérer le redimensionnement automatique du tableau)
-- Possibilité de modifier un utilisateur en cliquant dessus dans le tableau (ce qui ouvre le formulaire avec ses infos actuelles) et de le modifier.
-- Possibilité de supprimer un utilisateur en cliquand dessus dans le tableau (ce qui ouvre le formualaire avec ses infos actuelles et faire apparait un bouton `Delete`) et de le supprimer
+- Un bouton `Add new customer` en bas à droite du tableau , qui fait apparaitre un popin de création d'utilisateur au centre de l'écran.
+- Un bouton `Edit customer` a droite du premier bouton, qui permet d'éditer un utilisateur lorsqu'il est selectionné, et s'il est modifiable.
+- Un bouton `Delete customer` a droite du deuxième bouton, qui permet de supprimer un utilisateur lorsqu'il est selectionné, et s'il est modifiable.
+- Un bouton `Enable Modification` a droite du troisième bouton, qui permet de rendre un utilisateur modifiable si celui ci n'est pas modifiable. Il n'est visible que lors de la selection d'un utilisateur non modifiable.
+- Un bouton `Disable Modification` a droite du troisième bouton, qui permet de rendre un utilisateur non modifiable si celui ci est modifiable. Il n'est visible que lors de la selection d'un utilisateur modifiable.
 
 Vous avez à dispostion :
-- Une classe `Customer.java` qui modélise un utilisateur. (Pas besoin de modifier cette classe sauf si vous voulez ajouter des fonctionnalités supplémentaires à celles proposées)
+- Une classe `Customer.java` qui modélise un utilisateur. (Il vous sera demandé d'ajouté un attribut 'modifiable' par la suite)
 - Une classe `MyUI.java` qui est la classe où vous pourrez gérer votre interface utilisateur en utilisant des composants Vaadin. Celle-ci contient actuellement le HelloWorld, vous devrez la modifier pour créer l'interface décrite précédemment.
 - Une classe `CustomerService.java` qui est toute la partie 'calcul' de vos fonctionnalités. Les méthodes sont pré-créées, il vous faut maintenant ajouter le code adéquat pour faire fonctionner la méthode.
-- Une classe `CustomerForm.java` qui concerne les actions du formulaire (à droite) pour ajouter, éditer et supprimer des utilisateurs.
+- Une classe `SaveWindow.java` qui concerne le popin de création, et de modification d'un utilisateur.
+- Une classe `DeleteWindow.java` qui concerne le popin de suppression d'un utilisateur.
+
+3 utilisateurs sont déjà créés pour vous simplifier le démarrage.
 
 
 ### Mini-Wiki
@@ -86,14 +91,17 @@ Pensez à consulter notre [mini-wiki](https://github.com/MaximeOpsommer/TP-Vaadi
 Vous avez désormais tout ce qu'il faut pour démarrer.
 Implémenter les différentes fonctionnalités (dans l'ordre) :
 
-- Lister les différents utilisateurs sous forme de tableau
-- Ajouter un filtre des utilisateurs par nom et/ou prénom
-- Ajouter un bouton 'Ajouter un utilisateur' (au dessus du taleau) qui ouvre un formulaire à droite du tableau
-- Le formulaire doit contenir : Nom, Prénom, Email, Date de naissance et un bouton Submit pour créer un nouvel utilisateur. L'utilisateur doit être créé et ajouté dans le tableau sans avoir besoin de rafraichir la page
-- Ajouter un évènement de clic sur un utilisateur qui renseignera un champ 'Utilisateur sélectionné' en dessous du tableau
-- Ajouter un moyen de désélectionner un utilisateur (par exemple en cliquant sur 'Ajouter un utilisateur')
-- Ajouter la possibilité d'éditer un utilisateur. Le bouton Submit du formulaire fera un Edit au lieu d'un Save si un utilisateur est sélectionné
-- Ajouter la possibilité de supprimer un utilisateur en affichant un bouton 'Supprimer' à côté de Submit quand un utilisateur est sélectionné
+- Listez les différents utilisateurs sous forme de tableau
+- Ajoutez un filtre des utilisateurs par nom et/ou prénom
+- Ajoutez un bouton 'Add new customer' (en dessous du taleau) qui ouvre un popin au centre de l'écran.
+- Le popin doit contenir : Nom, Prénom, Email, Date de naissance ,un bouton Save pour créer un nouvel utilisateur et un bouton Cancel pour tout annuler et fermer le popin. L'utilisateur doit être créé et ajouté dans le tableau sans avoir besoin de rafraichir la page.
+- Créez la fonctionnalité permettant de selectionner un utilisateur dans le tableau grace au clic de souris.
+- Ajoutez un bouton 'Edit customer' (à droite du tableau) qui ouvre le popin précèdent avec les informations de l'utilisateur selectionné, permettant à celui ci d'être édité.
+- Ajoutez au bouton 'Save' le raccourci 'ENTER' et mettez lui le style 'BUTTON_PRIMARY'.
+- Ajoutez un bouton 'Delete customer' qui ouvre un popin au centre de l'écran.
+- Le popin doit contenir : une phrase de confirmation, un bouton 'Supprimer' qui supprime l'utilisateur sélectionné et un bouton 'Annuler' qui ferme le popin.
+
+
 
 
 
@@ -101,7 +109,8 @@ Implémenter les différentes fonctionnalités (dans l'ordre) :
 Pour aller plus loin :
 ----------------------
 
-- Rajouter un tri au filtre
+- Ajouter une fonction qui permet de copier un utilisateur en double dans le tableau.
+- Séparer le tableau en deux partie, un avec les utlisateurs modifiables, l'autres avec les utilisateurs non modifiables.
 
 
 

@@ -7,13 +7,6 @@ import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- * An in memory dummy "database" for the example purposes. In a typical Java app
- * this class would be replaced by e.g. EJB or a Spring based service class.
- * <p>
- * In demos/tutorials/examples, get a reference to this service class with
- * {@link CustomerService#getInstance()}.
- */
 public class CustomerService {
 
 	private static CustomerService instance;
@@ -98,7 +91,7 @@ public class CustomerService {
 		/* Log une erreur si l'entrée est nulle */
 		if (entry == null) {
 			LOGGER.log(Level.SEVERE,
-					"Customer is null. Are you sure you have connected your form to the application as described in tutorial chapter 7?");
+					"Customer is null.");
 			return;
 		}
 		/* Incrémente la prochaine ID */
@@ -116,7 +109,7 @@ public class CustomerService {
 	 */
 	public void ensureTestData() {
 		if (findAll().isEmpty()) {
-			final String[] names = new String[] { "Alexandre Delassus", "Maxime Opsommer", "Pierre-Claver Diara" };
+			final String[] names = new String[] { "Alexandre Delassus", "Maxime Opsommer", "Pierre-Claver Diarra" };
 			Random r = new Random(0);
 			for (String name : names) {
 				String[] split = name.split(" ");
